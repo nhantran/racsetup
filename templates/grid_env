@@ -1,4 +1,4 @@
-ORACLE_SID=+ASM1; export ORACLE_SID
+ORACLE_SID=+ASM<%= instancenumber %>; export ORACLE_SID
 ORACLE_HOME=$GRID_HOME; export ORACLE_HOME
 PATH=$ORACLE_HOME/bin:$BASE_PATH; export PATH
 
