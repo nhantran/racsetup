@@ -1,0 +1,27 @@
+{
+  "name": "nhantran-racsetup",
+  "author": "",
+  "description": "",
+  "license": "",
+  "project_page": "",
+  "source": "",
+  "summary": "",
+  "version": "",
+  "checksums": {
+    "Modulefile": "12e7d78c20b2a5b7767000f50ccb03c2",
+    "README.md": "9bfc2a2256a7f70ec7dc44ecf4229f01",
+    "files\\etc\\fstab": "b1e4077a0da6b933045035a5c919740f",
+    "files\\etc\\pam.d\\login": "3adf0682681e4fd3e864e37403d6cc14",
+    "files\\etc\\security\\limits.conf": "18877376187d04f218bdca7ac86b04fa",
+    "files\\etc\\sysconfig\\ntpd": "ed18172b4ef02db77a43411a93a414b7",
+    "files\\etc\\sysctl.conf": "f2ac73d1733bff5672615ad3a1225db1",
+    "files\\oracleasmlib-2.0.4-1.el5.x86_64.rpm": "a8c9e042d8072262fb215b202887bf32",
+    "files\\public-yum-el5.repo": "199877dcebd0c398336a4bf3fb2d7b9f",
+    "manifests\\config.pp": "d81e675e23df41f4021c08aa0f96c979",
+    "manifests\\init.pp": "0e73679e1692339200e4c15b18eef36b",
+    "manifests\\install.pp": "df78c8004aa7e6ed59918a021a2663b3",
+    "templates\\home\\oracle\\db_env": "de7996d388f1eedb3f67881feefd19db",
+    "templates\\home\\oracle\\grid_env": "bea72a5891d34da62cf91e9775270909"
+  },
+  "dependencies": []
+}
