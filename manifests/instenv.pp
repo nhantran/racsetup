@@ -17,5 +17,5 @@ define racsetup::instenv( $oraunqname, $orasid, $instancenumber ) {
   file {"/home/oracle/db_env.erb":
     content => template('racsetup/db_env.erb'),
   }
-  
+ 
 }
