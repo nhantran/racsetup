@@ -14,12 +14,8 @@ class racsetup::install {
 		source => "puppet:///modules/racsetup/public-yum-el5.repo", 
     }
 	
-	package { "unixODBC-2.2.11-10.el5.i386":
-		ensure => present,
-		require => Package["oracle-validated"],
-	}
-	
-	package { "oralceasm-support-2.1.7-1.el5.x86_64":
+	package { ["unixODBC-2.2.11-10.el5.i386",
+				"oralceasm-support-2.1.7-1.el5.x86_64"]:
 		ensure => present,
 		require => Package["oracle-validated"],
 	}

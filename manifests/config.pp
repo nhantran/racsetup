@@ -9,11 +9,12 @@ class racsetup::config {
 
 	file { "/etc/sysctl.conf":
 		source => "puppet:///modules/racsetup/etc/sysctl.conf", 
-		notify => Exec["/sbin/sysctl -p"],
+		notify => Exec["apply_sysctl"],
     }
     
-    exec { "/sbin/sysctl -p":
-    	require => File["/etc/sysctl.conf"],
+    exec { "apply_sysctl":
+    	command => "sysctl -p",
+    	path => "/sbin/",
     }
     	
 	file { "/etc/fstab":
