@@ -10,7 +10,7 @@ class racsetup::install {
 		ensure => present,
 		owner => 'root',
 		group => 'root', 
-		mode => 0600,
+		mode => 0644,
 		source => "puppet:///modules/racsetup/public-yum-el5.repo", 
     }
 	
