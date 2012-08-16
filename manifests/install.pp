@@ -15,7 +15,7 @@ class racsetup::install {
     }
 	
 	package { ["unixODBC-2.2.11-10.el5.i386",
-				"oralceasm-support-2.1.7-1.el5.x86_64"]:
+				"oracleasm-support-2.1.7-1.el5.x86_64"]:
 		ensure => present,
 		require => Package["oracle-validated"],
 	}
