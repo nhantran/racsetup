@@ -20,10 +20,10 @@ class racsetup::install {
 		require => Package["oracle-validated"],
 	}
 
-	package { "oracleasmlib-2.0.4-1.el5.x86_64":
-		ensure => present,
+	package { "oracleasmlib":
+		ensure => installed,
 		provider => rpm,
-		source => "puppet:///modules/racsetup/oracleasmlib-2.0.4-1.el5.x86_64.rpm",
+		source => "http://download.oracle.com/otn_software/asmlib/oracleasmlib-2.0.4-1.el5.x86_64.rpm",
 		require => Package["oracle-validated"],
 	}	
 }
