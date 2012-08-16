@@ -14,7 +14,7 @@ define racsetup::instenv( $oraunqname, $orasid, $instancenumber ) {
     content => template('racsetup/grid_env.erb'),
   }
   
-  file {"/home/oracle/db_env.erb":
+  file {"/home/oracle/db_env":
     content => template('racsetup/db_env.erb'),
   }
  
